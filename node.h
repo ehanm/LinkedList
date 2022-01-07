@@ -8,6 +8,8 @@ class Node {
 
  public:
 
+  int value;
+  
   Node* nodepointer;
   Student* getStudent();
   Node* getNext();
