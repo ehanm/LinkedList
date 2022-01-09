@@ -6,13 +6,16 @@
 
 using namespace std;
 
-Student* Node::setStudent(){
-
+void Node::setStudent(){
+  
   cout << "Enter the student's name: ";
-  cin >> name;
+  cin >> studentpointer->name;
   cout << "" << endl;
-  cin >> id;
-  cin >> gpa;
+  cout << "Enter the student's id: ";
+  cin >> studentpointer->id;
+  cout << "" << endl;
+  cout << "Enter the student's gpa: " << endl;
+  cin >> studentpointer->gpa;
   
 }
 
