@@ -6,34 +6,30 @@
 
 using namespace std;
 
-void Node::setStudent(){
-  
-  cout << "Enter the student's name: ";
-  cin >> studentpointer->name;
-  cout << "" << endl;
-  cout << "Enter the student's id: ";
-  cin >> studentpointer->id;
-  cout << "" << endl;
-  cout << "Enter the student's gpa: " << endl;
-  cin >> studentpointer->gpa;
-  
+Node::Node(Student* student){
+studentpointer = student;
+  nextpointer = NULL;
+}
+
+Node::~Node(){
+  delete studentpointer;
+  nextpointer = NULL;
 }
 
 Student* Node::getStudent(){  
-
   return studentpointer;
 
 }
 
 Node* Node::getNext(){
   // return next node
-  return nodepointer;
+  return nextpointer;
   
 }
 
 void Node::setNext(Node* nextnode){
 
-  nodepointer = nextnode;
+  nextpointer = nextnode;
   
 }
 
