@@ -6,8 +6,10 @@
 
 using namespace std;
 
+// set up all functions for LinkedList
+
 Node::Node(Student* student){
-studentpointer = student;
+  studentpointer = student;
   nextpointer = NULL;
 }
 

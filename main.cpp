@@ -6,6 +6,8 @@
 using namespace std;
 
 int main(){
+
+  // run the functions to make sure they all work
   
   Student* firststudent = new Student();
   Student* checknextstudent = new Student();
