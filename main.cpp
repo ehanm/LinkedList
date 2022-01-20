@@ -26,9 +26,12 @@ int main(){
   first->getStudent();
   cout << "Studentpointer can be obtained!" << endl;
 
+  first->getStudent()->printGPA();
+  
   first->~Node();
   checknextnode->~Node();
 
+  
   cout << "Nodes can be deleted!" << endl;
   
   return 0;

@@ -13,6 +13,8 @@ public:
   char name[1000];
   int id;
   float gpa;
+
+  void printGPA();
   
 };
 
